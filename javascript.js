@@ -6,7 +6,7 @@ console.log("Hello World !");
 3. let c=5; // block level scope, goes to downword , goes to call stack*/
 
 //Day 2
-x=10;
+/*x=10;
 10
 y=20;
 20
@@ -97,4 +97,4 @@ arr instanceof Object;
 true
 arr instanceof of Number;
 VM1705:1 Uncaught SyntaxError: Unexpected identifier
-
+*/
