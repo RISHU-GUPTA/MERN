@@ -97,4 +97,10 @@ arr instanceof Object;
 true
 arr instanceof of Number;
 VM1705:1 Uncaught SyntaxError: Unexpected identifier
+arr[3]
+(3) [1, 2, 3]0: 11: 22: 3length: 3__proto__: Array(0)
+arr[3].length;
+3
+arr[3][1];
+2
 */
