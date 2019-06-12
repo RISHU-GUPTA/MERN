@@ -1,0 +1,111 @@
+var a=10;
+undefined
+var a=20;
+
+undefined
+a
+20
+var b = new Number(50);
+undefined
+b
+Number {50}
+typeof b;
+"object"
+b instanceof Object
+true
+b instanceof Function;
+false
+typeof Object;
+"function"
+var arr[1,2,3,4,5];
+VM345:1 Uncaught SyntaxError: Unexpected token [
+var arr=[1,2,3,4,5];
+undefined
+arr;
+(5) [1, 2, 3, 4, 5]
+arr.push("gupta");
+6
+arr;
+(6) [1, 2, 3, 4, 5, "gupta"]
+arr.pop();
+"gupta"
+arr;
+(5) [1, 2, 3, 4, 5]
+arr.splice(2,1);
+[3]
+arr;
+(4) [1, 2, 4, 5]
+arr.splice(2,2);
+(2) [4, 5]
+arr;
+(2) [1, 2]
+arr.splice(2,2);
+[]length: 0__proto__: Array(0)
+arr;
+(2) [1, 2]
+b;
+Number {50}
+++b;
+51
+b;
+51
+typeof b;
+"number"
+var obj={"ram":521,"rishu":545}
+undefined
+obj;
+{ram: 521, rishu: 545}
+obj["ram"];
+521
+obj["rishu"];
+545
+obj.ram;
+521
+obj.rishu;
+545
+typeof obj;
+"object"
+obj instanceof Object;
+true
+var arr=[1,2,"rishu",5];
+undefined
+arr;
+(4) [1, 2, "rishu", 5]
+"This is array"+arr;
+"This is array1,2,rishu,5"
+"This is array "+toString(arr);
+"This is array [object Undefined]"
+"This is array "+arr.toString;
+"This is array function toString() { [native code] }"
+"This is array "+arr.toString();
+"This is array 1,2,rishu,5"
+obj;
+{ram: 521, rishu: 545}
+var obj={"ram":521,"rishu":545};
+undefined
+"This is object"+obj;
+"This is object[object Object]"
+var obj={"ram":521,"rishu":545,};
+undefined
+var obj={"ram":521,"rishu":545,
+toString:function(){
+"Ram id is"+this.ram+"and rishu id is "+this.rishu;
+}};
+undefined
+"This is object"+obj.toString();
+"This is objectundefined"
+var obj={"ram":521,"rishu":545,
+toString:function(){
+return "Ram id is"+this.ram+"and rishu id is "+this.rishu;
+}};
+undefined
+"This is object"+obj;
+"This is objectRam id is521and rishu id is 545"
+obj.salary=1000000;
+1000000
+obj;
+{ram: 521, rishu: 545, toString: ƒ, salary: 1000000}
+delete obj.salary;
+true
+obj;
+{ram: 521, rishu: 545, toString: ƒ}
