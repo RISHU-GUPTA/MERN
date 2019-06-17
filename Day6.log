@@ -1,0 +1,121 @@
+var arr=[10,54,3,89,45,70,94];
+undefined
+arr.push(5);
+8
+arr;
+(8) [10, 54, 3, 89, 45, 70, 94, 5]
+arr.pop();
+5
+arr;
+(7) [10, 54, 3, 89, 45, 70, 94]
+arr.splice(2);
+(5) [3, 89, 45, 70, 94]
+arr;
+(2) [10, 54]
+var arr=[10,54,3,89,45,70,94];
+undefined
+arr.splice(5,1);
+[70]
+arr;
+(6) [10, 54, 3, 89, 45, 94]
+arr.push(10);
+7
+arr;
+(7) [10, 54, 3, 89, 45, 94, 10]0: 101: 542: 33: 894: 455: 946: 10length: 7__proto__: Array(0)
+arr.push(5);
+8
+arr.push(10);
+9
+for(let a of arr){
+console.log(a);}
+VM518:2 10
+VM518:2 54
+VM518:2 3
+VM518:2 89
+VM518:2 45
+VM518:2 94
+VM518:2 10
+VM518:2 5
+VM518:2 10
+undefined
+function print(ele){
+console.log("THis is ", ele);
+}
+arr.forEach(print);
+VM727:2 THis is  10
+VM727:2 THis is  54
+VM727:2 THis is  3
+VM727:2 THis is  89
+VM727:2 THis is  45
+VM727:2 THis is  94
+VM727:2 THis is  10
+VM727:2 THis is  5
+VM727:2 THis is  10
+undefined
+arr.forEach(ele=>console.log(ele);
+VM832:1 Uncaught SyntaxError: missing ) after argument list
+arr.forEach(ele=>console.log(ele));
+VM839:1 10
+VM839:1 54
+VM839:1 3
+VM839:1 89
+VM839:1 45
+VM839:1 94
+VM839:1 10
+VM839:1 5
+VM839:1 10
+undefined
+arr.find(10);
+VM884:1 Uncaught TypeError: 10 is not a function
+    at Array.find (<anonymous>)
+    at <anonymous>:1:5
+(anonymous) @ VM884:1
+arr.find(ele=>ele==10);
+10
+arr.filter(ele=>ele==10);
+(3) [10, 10, 10]0: 101: 102: 10length: 3__proto__: Array(0)
+arr.filter(ele=>ele==10).length;
+3
+var m=arr.filter(ele=>true);
+undefined
+m
+(9) [10, 54, 3, 89, 45, 94, 10, 5, 10]
+var m=arr.filter(ele=>ele==10);
+undefined
+m
+(3) [10, 10, 10]0: 101: 102: 10length: 3__proto__: Array(0)
+var m=arr.filter(ele=>ele!=10);
+undefined
+m
+(6) [54, 3, 89, 45, 94, 5]
+arr.map(ele=>"₹"+(ele*.18).toFixed(2));
+(9) ["₹1.80", "₹9.72", "₹0.54", "₹16.02", "₹8.10", "₹16.92", "₹1.80", "₹0.90", "₹1.80"]
+arr.map(ele=>"₹"+(ele+ele*.18).toFixed(2));
+(9) ["₹11.80", "₹63.72", "₹3.54", "₹105.02", "₹53.10", "₹110.92", "₹11.80", "₹5.90", "₹11.80"]
+arr.sort((a,b)=>a-b);
+(9) [3, 5, 10, 10, 10, 45, 54, 89, 94]
+m.sort((a,b)=>a-b);
+(6) [3, 5, 45, 54, 89, 94]
+m.sort((a,b)=>b-a);
+(6) [94, 89, 54, 45, 5, 3]
+var s=["ram",'rishu',"shyam","suman",'kaushal'];
+undefined
+s.sort((a-b)=>a.localCompare(b));
+VM1866:1 Uncaught SyntaxError: Invalid destructuring assignment target
+s.sort((a,b)=>a.localCompare(b));
+VM1874:1 Uncaught TypeError: a.localCompare is not a function
+    at <anonymous>:1:17
+    at Array.sort (<anonymous>)
+    at <anonymous>:1:3
+(anonymous) @ VM1874:1
+(anonymous) @ VM1874:1
+s.sort((a,b)=>a.localeCompare(b));
+(5) ["kaushal", "ram", "rishu", "shyam", "suman"]
+s.sort((a,b)=>b.localeCompare(a));
+(5) ["suman", "shyam", "rishu", "ram", "kaushal"]
+arr.reduce((sum,ele)=>sum+=ele,sum=0);
+320
+arr
+(9) [3, 5, 10, 10, 10, 45, 54, 89, 94]
+arr.reduce((sum,ele)=>sum*=ele,sum=1);
+304940700000
