@@ -1,0 +1,99 @@
+function* generator(i) {
+  yield i;
+  yield i + 10;
+}
+undefined
+var g=generator();
+undefined
+g.next();
+{value: undefined, done: false}
+var g=generator(10);
+undefined
+g.next();
+{value: 10, done: false}
+g.next();
+{value: 20, done: false}
+g.next();
+{value: undefined, done: true}
+function* autoGen(){
+var counter = 1;
+while(true){
+yield counter;
+counter++;
+}
+}
+undefined
+var g=autoGen();
+undefined
+g.next();
+{value: 1, done: false}
+g.next();
+{value: 2, done: false}
+g.next();
+{value: 3, done: false}
+g.next();
+{value: 4, done: false}
+g.next();
+{value: 5, done: false}
+g.next();
+{value: 6, done: false}
+g.next();
+{value: 7, done: false}
+g.next();
+{value: 8, done: false}
+g.next();
+{value: 9, done: false}
+g.next();
+{value: 10, done: false}
+g.next();
+{value: 11, done: false}
+g.next();
+{value: 12, done: false}
+g.next();
+{value: 13, done: false}
+g.next();
+{value: 14, done: false}
+g.next().value;
+15
+g.next().value;
+16
+g.next().value;
+17
+g.next().value;
+18
+g.next().value;
+19
+g.next().value;
+20
+g.next().value;
+21
+(function* (){
+var counter = 1;
+while(true){
+yield counter;
+counter++;
+}
+})()
+Generator {<suspended>}__proto__: Generator[[GeneratorLocation]]: VM415:1[[GeneratorStatus]]: "suspended"[[GeneratorFunction]]: ƒ* ()[[GeneratorReceiver]]: Window[[Scopes]]: Scopes[2]
+var t=(function* (){
+var counter = 1;
+while(true){
+yield counter;
+counter++;
+}
+})()
+undefined
+t.next();
+{value: 1, done: false}
+t.next().value;
+2
+t.next().value;
+3
+t.next().value;
+4
+t.next().value;
+5
+t.next().value;
+6
+t.next().value;
+7
