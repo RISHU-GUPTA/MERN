@@ -1,0 +1,13 @@
+arr;
+(10) [10, 54, 8, 97, 5, 31, 67, 5, 90, 5]
+arr.reduce((acc,ele)=>acc.push(ele),acc=[]);
+VM711:1 Uncaught TypeError: acc.push is not a function
+    at arr.reduce.acc (<anonymous>:1:27)
+    at Array.reduce (<anonymous>)
+    at <anonymous>:1:5
+arr.reduce.acc @ VM711:1
+(anonymous) @ VM711:1
+arr.reduce((acc,ele)=>arr.push(ele),acc=[])
+20
+arr;
+(20) [10, 54, 8, 97, 5, 31, 67, 5, 90, 5, 10, 54, 8, 97, 5, 31, 67, 5, 90, 5]
