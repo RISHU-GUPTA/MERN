@@ -1,5 +1,5 @@
 import React from 'react';
-export const Header=()=>{
+export const Header=(props)=>{
     return(
         <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -35,12 +35,13 @@ export const Header=()=>{
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
+    
   </div>
 </nav>
         
         
         
-        
+<div>The props is {props.name}</div>     
         
         
         
