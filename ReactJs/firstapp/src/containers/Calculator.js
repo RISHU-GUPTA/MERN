@@ -16,16 +16,31 @@ class Calculator extends Component {
     }
     second(event){
         this.setState({sno:Number(event.target.value)}) ;
+        console.log(event.target.value);
     }
      add(){
+         console.log('add called');
          let x=this.state.fno+this.state.sno;
          this.setState({res:x});
      }
+     sub(){
+        let x=this.state.fno-this.state.sno;
+         this.setState({res:x});  
+     }
+     mul(){
+        let x=this.state.fno*this.state.sno;
+         this.setState({res:x});  
+     }
+     div(){
+        let x=this.state.fno/this.state.sno;
+         this.setState({res:x});  
+     }
+     
     render() {
         return (
             <div>
             <Input ifirst={this.first.bind(this)} isecond={this.second.bind(this)}/>
-            <Operation add={this.add} />
+            <Operation add1={this.add.bind(this)} sub={this.sub.bind(this)} mul={this.mul.bind(this)} div={this.div.bind(this)} />
             <Output result={this.state.res}/>
             </div>
         );
